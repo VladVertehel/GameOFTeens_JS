@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.href {
+    margin-left: 40px;
+    text-decoration: none;
+    background-color: #ffed2d;
+    padding: 1px 15px;
+    border-radius: 1rem;
+    color: black;
+    font-size: 25px;
+    transition: 0.1s;
+    z-index: 1;
+}
+
+.href:hover {
+    color: rgb(100, 100, 100);
+    transition: 0.1s;
+}
+
+body {
+    background-color: #ffed2d;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form {
+    border: 3px black dashed;
+    padding: 15px 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+}
+
+
+.input {
+    margin: 10px;
+    width: 50%;
+    height: 35px;
+    padding: 10px;
+    border-radius: 0.3rem;
+    border: 1px solid grey;
+    font-size: medium;
+}
+
+.categorySelection,
+.pointsSelection {
+    padding: 0;
+    padding-left: 10px;
+}
+
+.submit-btn {
+    width: auto;
+    height: auto;
+    padding: 5px 10px;
+    font-weight: bolder;
+    cursor: pointer;
+    color: white;
+    border: none;
+    background-color: rgb(49, 49, 49);
+    transition: 0.1s;
+    z-index: 2;
+}
+
+.submit-btn:hover {
+    background-color: black;
+    transition: 0.1s;
+}
+
+.submit-btn:disabled {
+    background-color: rgb(69, 69, 69);
+    color: whitesmoke;
+    cursor: default;
+}
+
+.list-block {
+    background-color: rgb(19, 19, 19);
+    width: 100%;
+    color: rgb(235, 235, 235);
+    /* display: grid;
+    grid-template-columns: repeat(7, 1fr); */
+    border-collapse: collapse;
+}
+
+.diagram-bg {
+    width: 60vw;
+    height: 70vh;
+    background-color: azure;
+    padding: 30px;
+}
+
+.diagram {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: azure;
+    transform: rotateZ(180deg);
+    padding-left: 40px;
+    padding-right: 40px;
+    border-top: 2px solid grey;
+}
+
+.category {
+    width: 3vw;
+    height: 0;
+    z-index: 2;
+}
+
+.career {
+    background-color: green;
+}
+
+.family {
+    background-color: pink;
+}
+
+.environment {
+    background-color: orange;
+}
+
+.hobby {
+    background-color: yellow;
+}
+
+.rest {
+    background-color: purple;
+}
+
+.education {
+    background-color: blue;
+}
+
+.health {
+    background-color: greenyellow;
+}
+
+.careerInfluence {
+    background-color: rgb(0, 102, 0);
+}
+
+.familyInfluence {
+    background-color: rgb(211, 135, 148);
+}
+
+.environmentInfluence {
+    background-color: rgb(193, 125, 0);
+}
+
+.hobbyInfluence {
+    background-color: rgb(185, 185, 0);
+}
+
+.restInfluence {
+    background-color: rgb(69, 0, 69);
+}
+
+.educationInfluence {
+    background-color: rgb(0, 0, 175);
+}
+
+.healthInfluence {
+    background-color: rgb(130, 193, 36);
+}
+
+.list {
+    text-align: center;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px;
+    height: 50px;
+}
+
+/* .dateListItem {
+    font-weight: 600;
+    font-size: larger;
+} */
+
+.colors {
+    background-color: azure;
+    height: 70vh;
+    width: 17vw;
+    padding: 30px;
+    margin-right: 10px;
+    display: grid;
+    grid-template-rows: 1fr 3fr 3fr 3fr 3fr 3fr 3fr 3fr 2fr;
+    align-items: start;
+}
+
+.color {
+    display: flex;
+    align-items: center;
+}
+
+.diagram-grid {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 10fr 1fr 10fr 1fr 10fr 1fr 10fr 1fr 10fr 1fr 10fr 1fr 10fr 1fr 10fr 1fr 10fr 1fr 10fr 1fr;
+    /* grid-template-rows: repeat(22, 1fr); */
+    align-items: end;
+    justify-items: start;
+    z-index: 1;
+}
+
+.diagram-grid-item {
+    width: 100%;
+    height: 2px;
+    background-color: grey;
+    margin: 0;
+    z-index: 1;
+}
+
+.draw-btn {
+    width: 17vw;
+    height: auto;
+    padding: 10px;
+    font-weight: bolder;
+    cursor: pointer;
+    color: white;
+    border: none;
+    background-color: rgb(49, 49, 49);
+    transition: 0.1s;
+    z-index: 2;
+    margin-right: 10px;
+}
+
+.draw-btn:hover {
+    background-color: black;
+    transition: 0.1s;
+}
+
+
+td,
+th {
+    border: 1px solid white;
+}
